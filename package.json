@@ -1,0 +1,23 @@
+{
+  "name": "feed",
+  "version": "1.0.0",
+  "description": "Service to get news feed from HackerNews, Reddit Computer threads",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/saicharan/feed.git"
+  },
+  "author": "Sai Charan Kuppa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/saicharan/feed/issues"
+  },
+  "homepage": "https://gitlab.com/saicharan/feed#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "rss-to-json": "^1.1.3"
+  }
+}
