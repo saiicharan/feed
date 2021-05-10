@@ -1,5 +1,6 @@
 var express = require("express");
 var app = express();
+var cors = require('cors');
 
 var Feed = require('rss-to-json');
 
@@ -9,6 +10,8 @@ const getRandomFeedUrl = () => {
     const randomUrlIndex = Math.floor(Math.random() * urls.length);
     return urls[randomUrlIndex];
 }
+
+app.use(cors());
 
 app.get("/feed", (req, res, next) => {
     const url = getRandomFeedUrl();
