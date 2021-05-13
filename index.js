@@ -4,6 +4,8 @@ var cors = require('cors');
 
 var Feed = require('rss-to-json');
 
+const port = process.env.PORT || 8080;
+
 const urls = ["https://www.reddit.com/r/sysadmin/.rss", "https://www.reddit.com/r/programming/.rss", "https://news.ycombinator.com/rss"];
 
 const getRandomFeedUrl = () => {
@@ -20,6 +22,12 @@ app.get("/feed", (req, res, next) => {
     });
 });
 
-app.listen(process.env.PORT, () => {
-    console.log("Server running on port " + process.env.PORT);
+app.get("/ping", (req, res, next) => {
+    res.send('pong');
 });
+
+var server = app.listen(port, () => {
+    console.log("Server running on port " + port);
+});
+
+module.exports = server;

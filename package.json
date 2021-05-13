@@ -4,7 +4,7 @@
   "description": "Service to get news feed from HackerNews, Reddit Computer threads",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -17,8 +17,11 @@
   },
   "homepage": "https://gitlab.com/saicharan/feed#readme",
   "dependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "mocha": "^8.4.0",
     "rss-to-json": "^1.1.3"
   }
 }
