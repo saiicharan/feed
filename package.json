@@ -21,7 +21,9 @@
     "chai-http": "^4.3.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "express-prom-bundle": "^6.3.6",
     "mocha": "^8.4.0",
+    "prom-client": "^13.1.0",
     "rss-to-json": "^1.1.3"
   }
 }
