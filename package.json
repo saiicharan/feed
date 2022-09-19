@@ -1,6 +1,6 @@
 {
   "name": "feed",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Service to get news feed from HackerNews, Reddit Computer threads",
   "main": "index.js",
   "scripts": {
