@@ -1,13 +1,13 @@
 name: "Bump Version"
 
 on:
-  push:
-    branches:
-      - "master"
+  pull_request:
+    types: [ labeled ]
 
 jobs:
   bump-version:
     name: "Bump Version on master"
+    if: ${{ contains( github.event.pull_request.labels.*.name, 'javascript') && contains( github.event.pull_request.labels.*.name, 'dependencies')}}
     runs-on: ubuntu-latest
 
     steps:
