@@ -5,6 +5,8 @@ on:
     types:
       - closed
       - labeled
+  push:
+    branches: master
 
 jobs:
   bump-version:
