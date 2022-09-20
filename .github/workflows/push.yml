@@ -1,10 +1,6 @@
 name: "Bump Version"
 
 on:
-  pull_request:
-    types:
-      - closed
-      - labeled
   push:
     branches: master
 
