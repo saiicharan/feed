@@ -2,12 +2,14 @@ name: "Bump Version"
 
 on:
   pull_request:
-    types: [ labeled ]
+    types:
+      - closed
+      - labeled
 
 jobs:
   bump-version:
     name: "Bump Version on master"
-    if: ${{ contains( github.event.pull_request.labels.*.name, 'javascript') && contains( github.event.pull_request.labels.*.name, 'dependencies')}}
+    if: ${{ github.event.pull_request.merged && contains( github.event.pull_request.labels.*.name, 'javascript') && contains( github.event.pull_request.labels.*.name, 'dependencies')}}
     runs-on: ubuntu-latest
 
     steps:
