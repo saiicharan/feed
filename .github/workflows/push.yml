@@ -18,7 +18,7 @@ jobs:
       - name: "Setup Node.js"
         uses: "actions/setup-node@v1"
         with:
-          node-version: 12
+          node-version: 14
       - name: "Automated Version Bump"
         uses: "phips28/gh-action-bump-version@master"
         with:
