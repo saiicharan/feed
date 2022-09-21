@@ -24,6 +24,7 @@ jobs:
         with:
           tag-prefix: ''
           default: patch
+          patch-wording: 'bump' 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: "cat package.json"
