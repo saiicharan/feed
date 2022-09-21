@@ -1,6 +1,6 @@
 {
   "name": "feed",
-  "version": "3.0.1",
+  "version": "1.0.0",
   "description": "Service to get news feed from HackerNews, Reddit Computer threads",
   "main": "index.js",
   "scripts": {
@@ -17,13 +17,13 @@
   },
   "homepage": "https://gitlab.com/saicharan/feed#readme",
   "dependencies": {
-    "chai": "^4.3.6",
+    "chai": "^4.3.4",
     "chai-http": "^4.3.0",
     "cors": "^2.8.5",
-    "express": "^4.18.1",
+    "express": "^4.17.1",
     "express-prom-bundle": "^6.3.6",
-    "mocha": "^10.0.0",
-    "prom-client": "^14.1.0",
-    "rss-to-json": "^2.1.0"
+    "mocha": "^8.4.0",
+    "prom-client": "^13.1.0",
+    "rss-to-json": "^1.1.3"
   }
 }
