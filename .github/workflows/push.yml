@@ -24,7 +24,6 @@ jobs:
         with:
           tag-prefix: ''
           default: patch
-          patch-wording: 'bump'
           version-type: 'patch'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
